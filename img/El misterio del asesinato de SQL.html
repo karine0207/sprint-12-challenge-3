@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)https://mystery.knightlab.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./El misterio del asesinato de SQL_files/fontface.css">
+    <link rel="stylesheet" href="./El misterio del asesinato de SQL_files/orangeline.min.css">
+    <!-- /CSS -->
+
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.knightlab.com/libs/orangeline/0.1.1/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://cdn.knightlab.com/libs/orangeline/0.1.1/assets/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://cdn.knightlab.com/libs/orangeline/0.1.1/assets/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://cdn.knightlab.com/libs/orangeline/0.1.1/assets/favicons/manifest.json">
+    <link rel="mask-icon" href="https://cdn.knightlab.com/libs/orangeline/0.1.1/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!-- /FAVICONS -->
+
+    <title _msttexthash="711386" _msthash="0">El misterio del asesinato de SQL</title>
+    <!-- Meta -->
+    <meta name="keywords" content="SQL, databases, game, fun">
+    <meta name="description" content="Use SQL queries to solve the murder mystery. Suitable for beginners or experienced SQL sleuths.">
+    <!-- /Meta -->
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SQL Murder Mystery">
+    <meta property="og:description" content="Use SQL queries to solve the murder mystery. Suitable for beginners or experienced SQL sleuths.">
+    <meta property="og:image" content="http://mystery.knightlab.com/174092-clue-illustration.png">
+    <meta property="og:url" content="http://mystery.knightlab.com">
+    <meta property="og:site_name" content="Knight Lab&#39;s SQL Murder Mystery">
+    <meta property="fb:app_id" content="2361935160801585">
+    <!-- /Open Graph -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:title" content="Knight Lab&#39;s SQL Murder Mystery">
+    <meta name="twitter:description" content="Use SQL queries to solve the murder mystery. Suitable for beginners or experienced SQL sleuths.">
+    <meta name="twitter:image" content="http://mystery.knightlab.com/174092-clue-illustration.png">
+    <meta name="twitter:site" content="@knightlab">
+    <!-- /Twitter Card -->
+
+    <link rel="stylesheet" href="./El misterio del asesinato de SQL_files/codemirror.min.css">
+    
+    <link rel="stylesheet" href="./El misterio del asesinato de SQL_files/main.css">
+    <link rel="stylesheet" href="./El misterio del asesinato de SQL_files/neat.css">
+
+    <script src="./El misterio del asesinato de SQL_files/custom-elements.min.js.descargar"></script>
+    <script src="./El misterio del asesinato de SQL_files/codemirror.js.descargar"></script>
+    <script src="./El misterio del asesinato de SQL_files/codemirrorsql.js.descargar"></script>
+    <script src="./El misterio del asesinato de SQL_files/autorefresh.js.descargar"></script>
+    <script src="./El misterio del asesinato de SQL_files/main.js.descargar"></script>
+    <script>
+        window.onload = () => loadData('sql-murder-mystery.db');
+    </script>
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="./El misterio del asesinato de SQL_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8F4WPDMPL5');
+</script>
+    <title>The SQL Murder Mystery</title>
+</head>
+
+<body>
+    <nav id="navbar-product-top" class="navbar navbar-dark">
+        <ul>
+            <li class="logo">
+                <a href="http://knightlab.com/">
+                    <img src="./El misterio del asesinato de SQL_files/knightlab-dark.png">
+                </a>
+            </li>
+        </ul>
+        <div class="nav-mobile-menu">
+            <button class="button-plain">
+        <span class="icon-menu"></span>
+      </button>
+        </div>
+        <ul class="nav-right navbar-nav">
+
+
+            <li><a class="button button-dark button-small-tablet  button-active" href="https://knightlab.northwestern.edu/projects/" _msttexthash="139971" _msthash="1">Proyectos</a></li>
+
+            <li><a class="button button-dark button-small-tablet  " href="https://studio.knightlab.com/?_gl=1*11r836i*_ga*MTI4MzkwMzE0MS4xNzQ4ODc0ODgz*_ga_8F4WPDMPL5*czE3NDk3MzE5OTgkbzMkZzEkdDE3NDk3MzIxOTIkajYwJGwwJGgw" _msttexthash="96460" _msthash="2">Estudio</a></li>
+
+            <li><a class="button button-dark button-small-tablet  " href="https://localnewsinitiative.northwestern.edu/" _msttexthash="197106" _msthash="3">Local
+ Noticia</a></li>
+
+            <li><a class="button button-dark button-small-tablet  " href="https://knightlab.northwestern.edu/posts/" _msttexthash="113737" _msthash="4">Mensajes</a>
+            </li>
+
+            <li><a class="button button-dark button-small-tablet  " href="https://knightlab.northwestern.edu/community/" _msttexthash="131768" _msthash="5">Comunidad</a></li>
+
+        </ul>
+    </nav>
+
+    <header class="header-product">
+        <h1 class="product-logo product-logo-large" _msttexthash="581373" _msthash="6"> Misterio de asesinato de SQL </h1>
+        <h2 class="product-tagline" _msttexthash="654862" _msthash="7">¿Puedes averiguar quién es?</h2>
+    </header>
+
+    <div class="container">
+
+        <div id="intro" class="grid">
+            <div class="grid-item">
+                <img src="./El misterio del asesinato de SQL_files/174092-clue-illustration.png" class="img-rounded" alt="Una ilustración decorativa de un detective mirando un tablero de pruebas." _mstalt="2964533" _msthash="8">
+                <p _msttexthash="34007779" _msthash="9"> ¡Ha habido un asesinato en SQL City! The SQL Murder Mystery está diseñado para ser tanto una lección autodirigida para aprender conceptos y comandos de SQL como un juego divertido para que los usuarios experimentados de SQL resuelvan un crimen intrigante. </p>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="grid-item">
+                <h2 _msttexthash="297271" _msthash="10">¿Eres nuevo en SQL?</h2>
+                <p><font _mstmutation="1" _msttexthash="9741017" _msthash="11"> Este ejercicio está pensado más como una forma de practicar las habilidades de SQL que como un tutorial completo. Si nunca has usado SQL, </font><a href="https://mystery.knightlab.com/walkthrough.html" _msttexthash="323843" _msthash="12">Pruebe el tutorial</a><font _mstmutation="1" _msttexthash="4662138" _msthash="13">. Si realmente quieres aprender mucho sobre SQL, es posible que prefieras un
+ tutorial como </font><a href="https://selectstarsql.com/" _msttexthash="335816" _msthash="14">Seleccione Star SQL.</a>
+
+                </p>
+                <p><font _mstmutation="1" _msttexthash="773279" _msthash="15">Si se siente cómodo con SQL, puede </font><a href="https://mystery.knightlab.com/#experienced" _msttexthash="596739" _msthash="16">Sumérgete a continuación</a><font _mstmutation="1" _msttexthash="3003" _msthash="17">!</font></p>
+            </div>
+        </div>
+
+
+        <div class="grid">
+            <div class="grid-item">
+                <h2 id="experienced" _msttexthash="1884285" _msthash="18">Los detectives de SQL experimentados comienzan aquí</h2>
+                <p _msttexthash="77469717" _msthash="19"> Ha ocurrido un crimen y el detective necesita tu ayuda. El detective te dio el informe de la escena del crimen, pero de alguna manera lo perdiste. Recuerda vagamente que el crimen fue un <strong _istranslated="1">asesinato</strong> que ocurrió en algún momento del <strong _istranslated="1">15 de enero de 2018</strong> y que tuvo lugar en <strong _istranslated="1">SQL City</strong>. Comience por recuperar el informe correspondiente de la escena del crimen de la base de datos del departamento de policía. </p>
+
+                <h3 _msttexthash="1484951" _msthash="20">Exploración de la estructura de la base de datos</h3>
+
+                <p _msttexthash="62131680" _msthash="21"> Los usuarios experimentados de SQL a menudo pueden usar consultas de base de datos para inferir la estructura de una base de datos. Pero cada sistema de base de datos tiene diferentes formas de gestionar esta información. SQL Murder Mystery se construye con SQLite. Utilice este comando SQL para encontrar las tablas
+ en la base de datos de Murder Mystery. </p>
+
+                <sql-exercise data-question="Run this query to find the names of the tables in this database." data-comment="This command is specific to SQLite. For other databases, you&#39;ll have to learn their specific syntax." data-default-text="SELECT name 
+  FROM sqlite_master
+ where type = &#39;table&#39;"><div class="sqlExHomeDiv"><div class="sqlExQuestion" _msttexthash="3734744" _msthash="22">Ejecute esta consulta para buscar los nombres de las tablas de esta base de datos.</div><div class="sqlExComment" _msttexthash="6806956" _msthash="23">Este comando es específico de SQLite. Para otras bases de datos, tendrá que aprender su sintaxis específica.</div><form><div class="sqlExInputArea"><textarea name="input" style="display: none;">SELECT name 
+  FROM sqlite_master
+ where type = 'table'</textarea><div class="CodeMirror cm-s-neat" style="width: 100%; height: auto;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 34px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 30px; min-width: 214.863px; margin-bottom: -15px; border-right-width: 15px; min-height: 78px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 23.4px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msttexthash="4459" _msthash="133" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">SELECT</span> name </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msttexthash="4550" _msthash="132" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  <span class="cm-keyword">FROM</span> sqlite_master</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" _msttexthash="4641" _msthash="131" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> <span class="cm-keyword">where</span> type <span class="cm-operator">=</span> <span class="cm-string">'table'</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 15px; width: 1px; border-bottom: 0px solid transparent; top: 78px;"></div><div class="CodeMirror-gutters" style="left: 0px; height: 93px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div><input class="sql-exercise-submit" type="submit" value="Correr ⇩" _mstvalue="1161030" _msthash="27"><input type="button" value="Restablecimiento" _mstvalue="61139" _msthash="28"></div><div class="sqlExOutputArea"><output name="output"><div class="returnOkay"><table class="datatable"><thead><tr><td _msttexthash="79105" _msthash="134">nombre</td></tr></thead><col class="name"><tbody><tr><td _msttexthash="388180" _msthash="135">crime_scene_report</td></tr><tr><td _msttexthash="290589" _msthash="136">drivers_license</td></tr><tr><td _msttexthash="522314" _msthash="137">facebook_event_checkin</td></tr><tr><td _msttexthash="163345" _msthash="138">entrevista</td></tr><tr><td _msttexthash="383461" _msthash="139">get_fit_now_member</td></tr><tr><td _msttexthash="447044" _msthash="140">get_fit_now_check_in</td></tr><tr><td _msttexthash="141479" _msthash="141">solución</td></tr><tr><td _msttexthash="62699" _msthash="142">renta</td></tr><tr><td _msttexthash="98410" _msthash="143">persona</td></tr></tbody></table></div></output></div></form></div></sql-exercise>
+
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="grid-item">
+                <p _msttexthash="30687059" _msthash="39"> Además de conocer los nombres de las tablas, necesita saber cómo está estructurada cada tabla. La forma en que esto funciona también depende de la tecnología de base de datos que utilice. A continuación, te explicamos cómo hacerlo con SQLite. </p>
+
+                <sql-exercise data-question="Run this query to find the structure of the `crime_scene_report` table" data-comment="Change the value of &#39;name&#39; to see the structure of the other tables you learned about with the previous query." data-default-text="SELECT sql 
+  FROM sqlite_master
+ where name = &#39;crime_scene_report&#39;"><div class="sqlExHomeDiv"><div class="sqlExQuestion" _msttexthash="4223557" _msthash="40">Ejecute esta consulta para encontrar la estructura de la tabla 'crime_scene_report'</div><div class="sqlExComment" _msttexthash="6346782" _msthash="41">Cambie el valor de 'name' para ver la estructura de las otras tablas que aprendió con la consulta anterior.</div><form><div class="sqlExInputArea"><textarea name="input" style="display: none;">SELECT sql 
+  FROM sqlite_master
+ where name = 'crime_scene_report'</textarea><div class="CodeMirror cm-s-neat" style="width: 100%; height: auto;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 34px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 30px; min-width: 343.513px; margin-bottom: -15px; border-right-width: 15px; min-height: 78px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div _msttexthash="4641" _msthash="42">3</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 23.4px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;" _msttexthash="4459" _msthash="43">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">SELECT</span> sql </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;" _msttexthash="4550" _msthash="44">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  <span class="cm-keyword">FROM</span> sqlite_master</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;" _msttexthash="4641" _msthash="45">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> <span class="cm-keyword">where</span> name <span class="cm-operator">=</span> <span class="cm-string">'crime_scene_report'</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 15px; width: 1px; border-bottom: 0px solid transparent; top: 78px;"></div><div class="CodeMirror-gutters" style="left: 0px; height: 93px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div><input class="sql-exercise-submit" type="submit" value="Correr ⇩" _mstvalue="1161030" _msthash="46"><input type="button" value="Restablecimiento" _mstvalue="61139" _msthash="47"></div><div class="sqlExOutputArea"><output name="output"><div class="returnOkay"><table class="datatable"><thead><tr><td _msttexthash="24869" _msthash="148">SQL</td></tr></thead><col class="sql"><tbody><tr><td _msttexthash="6228079" _msthash="149">CREAR TABLA crime_scene_report (
+ entero de fecha,
+ escriba el texto,
+ texto descriptivo,
+ Texto de la ciudad
+ )</td></tr></tbody></table></div></output></div></form></div></sql-exercise>
+
+            </div>
+        </div>
+
+
+        <div class="grid">
+            <div class="grid-item">
+                <h3 _msttexthash="431379" _msthash="50">¡El resto depende de ti!</h3>
+                <p _msttexthash="3956732" _msthash="51"> Si realmente se siente cómodo con SQL, probablemente pueda obtenerlo desde aquí. </p>
+                <p><font _mstmutation="1" _msttexthash="45552" _msthash="52"> Pero </font><a id="show-schema" _msttexthash="231803" _msthash="53">Haga clic aquí</a><font _mstmutation="1" _msttexthash="907946" _msthash="54"> para mostrar el diagrama de esquema. </font><img id="experienced-schema" src="./El misterio del asesinato de SQL_files/schema.png" width="1002" height="491" class="show">
+                </p>
+                <p><font _mstmutation="1" _msttexthash="418418" _msthash="55"> Y siempre puedes ir a la </font><a href="https://mystery.knightlab.com/walkthrough.html" _msttexthash="116545" _msthash="56">Tutorial</a><font _mstmutation="1" _msttexthash="4186" _msthash="57">.
+                </font></p>
+
+                <sql-exercise data-question="Use your knowledge of the database schema and SQL commands to find out who committed the murder." data-comment="When you think you know the answer, go to the next section." data-default-text="
+              
+              
+
+
+
+              "><div class="sqlExHomeDiv"><div class="sqlExQuestion" _msttexthash="7716137" _msthash="58">Utilice su conocimiento del esquema de la base de datos y los comandos SQL para averiguar quién cometió el asesinato.</div><div class="sqlExComment" _msttexthash="2610010" _msthash="59">Cuando creas que sabes la respuesta, pasa a la siguiente sección.</div><form><div class="sqlExInputArea"><textarea name="input" style="display: none;">
+              
+              
+
+
+
+              </textarea><div class="CodeMirror cm-s-neat" style="width: 100%; height: auto;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 34px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 30px; min-width: 145.562px; margin-bottom: -15px; border-right-width: 15px; min-height: 172px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span _msttexthash="10920" _msthash="60"><span _istranslated="1"></span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 23.4px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;" _msttexthash="4459" _msthash="61">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;" _msttexthash="4550" _msthash="62">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">              </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;" _msttexthash="4641" _msthash="63">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">              </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;" _msttexthash="4732" _msthash="64">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;" _msttexthash="4823" _msthash="65">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;" _msttexthash="4914" _msthash="66">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;" _msttexthash="5005" _msthash="67">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">              </span></pre></div></div></div></div></div></div><div style="position: absolute; height: 15px; width: 1px; border-bottom: 0px solid transparent; top: 172px;"></div><div class="CodeMirror-gutters" style="left: 0px; height: 187px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div><input class="sql-exercise-submit" type="submit" value="Correr ⇩" _mstvalue="1161030" _msthash="68"><input type="button" value="Restablecimiento" _mstvalue="61139" _msthash="69"></div><div class="sqlExOutputArea"><output name="output"><div class="returnOkay" _msttexthash="390286" _msthash="70">No se devuelven datos</div></output></div></form></div></sql-exercise>
+                <!-- newlines in data-default-text force input to be larger -->
+            </div>
+        </div>
+
+        <div id="check-solution" class="grid">
+            <div class="grid-item">
+                <h3 _msttexthash="469508" _msthash="71">Compruebe su solución</h3>
+                <sql-exercise data-question="Did you find the killer?" data-comment="" data-default-text="INSERT INTO solution VALUES (1, &#39;Insert the name of the person you found here&#39;);
+        
+        SELECT value FROM solution;"><div class="sqlExHomeDiv"><div class="sqlExQuestion" _msttexthash="526474" _msthash="72">¿Encontraste al asesino?</div><form><div class="sqlExInputArea"><textarea name="input" style="display: none;">INSERT INTO solution VALUES (1, 'Insert the name of the person you found here');
+        
+        SELECT value FROM solution;</textarea><div class="CodeMirror cm-s-neat CodeMirror-focused" style="width: 100%; height: auto;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 27.4px; left: 113.175px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 30px; min-width: 798.788px; margin-bottom: -15px; border-right-width: 15px; min-height: 78px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div _msttexthash="4641" _msthash="73">3</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 83.175px; top: 23.4px; height: 23.4px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;" _msttexthash="4459" _msthash="74">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">INSERT</span> <span class="cm-keyword">INTO</span> solution <span class="cm-keyword">VALUES</span> <span class="cm-bracket">(</span><span class="cm-number">1</span><span class="cm-punctuation">,</span> <span class="cm-string">'Insert the name of the person you found here'</span><span class="cm-bracket">)</span><span class="cm-punctuation">;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;" _msttexthash="4550" _msthash="75">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">        </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -30px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;" _msttexthash="4641" _msthash="76">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">        <span class="cm-keyword">SELECT</span> value <span class="cm-keyword">FROM</span> solution<span class="cm-punctuation">;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 15px; width: 1px; border-bottom: 0px solid transparent; top: 78px;"></div><div class="CodeMirror-gutters" style="left: 0px; height: 93px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div><input class="sql-exercise-submit" type="submit" value="Correr ⇩" _mstvalue="1161030" _msthash="77"><input type="button" value="Restablecimiento" _mstvalue="61139" _msthash="78"></div><div class="sqlExOutputArea"><output name="output"><div class="returnOkay"><table class="datatable"><thead><tr><td _msttexthash="64194" _msthash="106">valor</td></tr></thead><col class="value"><tbody><tr><td _msttexthash="1676714" _msthash="107">Esa no es la persona adecuada. ¡Vuelve a intentarlo!</td></tr></tbody></table></div></output></div></form></div></sql-exercise>
+            </div>
+        </div>
+
+        <div id="credits" class="grid">
+            <div class="grid-item">
+                <h3 _msttexthash="131014" _msthash="79">Créditos</h3>
+                <p><font _mstmutation="1" _msttexthash="885274" _msthash="80">El SQL Murder Mystery fue creado por </font><a href="https://twitter.com/joonparkmusic" _msttexthash="155116" _msthash="81">Parque Joon</a><font _mstmutation="1" _msttexthash="11011" _msthash="82"> y </font><a href="https://twitter.com/Cathy_MeiyingHe" _msttexthash="88881" _msthash="83">Cathy He</a><font _mstmutation="1" _msttexthash="1386853" _msthash="84"> mientras eran becarios de Knight Lab. Véase el </font><a href="https://github.com/NUKnightLab/sql-mysteries" _msttexthash="405262" _msthash="85">Repositorio de GitHub</a><font _mstmutation="1" _msttexthash="761059" _msthash="86"> para obtener más información.</font></p>
+                <p><font _mstmutation="1" _msttexthash="894244" _msthash="87">Adaptado y producido para la web por </font><a href="https://twitter.com/joegermuska" _msttexthash="177385" _msthash="88">Joe Germuska</a><font _mstmutation="1" _msttexthash="4186" _msthash="89">.</font></p>
+                <p><font _mstmutation="1" _msttexthash="760448" _msthash="90">Este misterio fue inspirado por </font><a href="https://github.com/veltman/clmystery" _msttexthash="991627" _msthash="91">Un delito en el vecino
+ Ciudad Terminal.</a></p>
+                <p><font _mstmutation="1" _msttexthash="1132079" _msthash="92">El SQL basado en la web es posible gracias a </font><a href="https://github.com/sql-js/sql.js/" _msttexthash="63947" _msthash="93">SQL.js</a></p>
+                <p><font _mstmutation="1" _msttexthash="7295015" _msthash="94">Componentes web personalizados de consulta SQL creados y liberados al dominio público por Zi Chong Kao, creador de </font><a href="https://selectstarsql.com/" _msttexthash="335816" _msthash="95">Seleccione Star SQL.</a></p>
+                <p><font _mstmutation="1" _msttexthash="1078376" _msthash="96">Ilustración de detective cortesía de </font><a href="https://www.vecteezy.com/" _msttexthash="385099" _msthash="97">Vectores de Vecteezy</a></p>
+                <p><font _mstmutation="1" _msttexthash="2271035" _msthash="98">El código original de este proyecto se publica bajo el nombre </font><a href="https://github.com/NUKnightLab/sql-mysteries/blob/master/LICENSE" _msttexthash="157885" _msthash="99">Licencia MIT</a></p>
+                <p><font _mstmutation="1" _msttexthash="2966288" _msthash="100">El texto original y otros contenidos de este proyecto se publican bajo </font><a href="https://creativecommons.org/licenses/by-sa/4.0/" _msttexthash="500435" _msthash="101">Creative Commons CC BY-SA 4.0</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-knightlab--dark">
+        <div class="container">
+            <div class="grid grid-center">
+                <div class="column-2 column-4-phone column-4-tablet">
+                    <a href="http://knightlab.northwestern.edu/" target="_blank">
+                        <img src="./El misterio del asesinato de SQL_files/logo-knightlab-stacked-dark-small.png" style="margin-left:auto;">
+                    </a>
+                    <ul class="list--social text-align-center">
+                        <li><a class="link--no-style" href="https://www.twitter.com/knightlab" target="_blank" title="Knight Lab on Twitter"><span class="icon-twitter"></span></a></li>
+                        <li><a class="link--no-style" href="https://www.facebook.com/knightlab" target="_blank" title="Knight Lab on Facebook"><span class="icon-facebook"></span></a></li>
+                        <li><a class="link--no-style" href="https://github.com/NUKnightLab/" target="_blank" title="Knight Lab on GitHub"><span class="icon-github"></span></a></li>
+                    </ul>
+                </div>
+                <div class="column-4 column-5-tablet column-6-phone footer-description">
+                    <p><font _mstmutation="1" _msttexthash="17511" _msthash="102"> El </font><a title="Northwestern University" href="http://www.northwestern.edu/" target="_blank" _msttexthash="603239" _msthash="103">Noroccidental
+ Universidad</a><font _mstmutation="1" _msttexthash="16671031" _msthash="104"> Knight Lab es un equipo de tecnólogos y periodistas que trabajan para promover la innovación de los medios de comunicación a través de la exploración y la experimentación. </font></p>
+                    <div class="grid-size-2 grid-size-2-phone">
+                        <div class="grid-item">
+                            <a title="Medill School of Journalism, Media, Integrated Marketing Communications" href="http://www.medill.northwestern.edu/" target="_blank">
+                                <img src="./El misterio del asesinato de SQL_files/logo-medill-dark.png">
+                            </a>
+                        </div>
+
+                        <div class="grid-item">
+                            <a title="McCormick School of Engineering" href="http://www.mccormick.northwestern.edu/" target="_blank">
+                                <img src="./El misterio del asesinato de SQL_files/logo-mccormick-dark.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-center">
+                <div class="grid-item">
+                    <address itemscope="" itemtype="http://data-vocabulary.org/Organization">
+            <span style="display:none;" itemprop="name" title="Knight Lab | Advancing news media innovation through exploration and experimentation." class="address-name">Knight Lab</span>
+            <span itemprop="tel" class="tel">(847) 467-4971</span>
+            <span itemprop="address" itemscope="" itemtype="http://data-vocabulary.org/Address" class="address">
+              <span itemprop="street-address" class="street-address">1845 Sheridan Road</span>
+              <span class="room-num">Fisk #109 &amp; #111</span>
+              <div class="address-group">
+                <span itemprop="locality">Evanston,</span> <span itemprop="region">IL</span> <span itemprop="postal-code">60208 </span>
+                <span style="display:none;" itemprop="geo" itemscope="" itemtype="http://www.data-vocabulary.org/Geo/" class="geo">
+                  Latitude: <span itemprop="latitude">42.056893</span><br>Longitude:
+                  <span itemprop="longitude">-87.676735</span>
+                </span>
+                <a style="display:none;" href="http://knightlab.northwestern.edu/" itemprop="url" class="url">Northwesten
+                  University Knight Lab | Advancing media innovation through exploration and experimentation.</a>
+              </div>
+            </span>
+          </address>
+                    <span class="copyright" _msttexthash="1606982" _msthash="105">© Derechos de autor 2019 Universidad Northwestern</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./El misterio del asesinato de SQL_files/orangeline.js.descargar"></script>
+    <script type="text/javascript">
+        document.querySelector('#show-schema').addEventListener('click', function() {
+            document.querySelector('#experienced-schema').classList.add('show');
+        })
+    </script>
+
+
+
+
+</body></html>
